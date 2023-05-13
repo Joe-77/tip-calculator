@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/Normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo"><img src="images/logo.svg" alt=""></div>
+    <div class="child-container">
+      <div class="form">
+        <form>
+          <div class="bill">
+            <label for="input-value">Bill</label>
+            <input type="text" id="input-value">
+            <i class="fa-solid fa-dollar-sign"></i>
+          </div>
+          <p id="tip">Select Tip %</p>
+          <div class="grid">
+            <span id="5% All">5%</span>
+            <span id="10% All">10%</span>
+            <span id="15% All">15%</span>
+            <span id="25% All">25%</span>
+            <span id="50% All">50%</span>
+            <input id="custom" type="text" placeholder="Custom">
+          </div>
+
+          <div class="people">
+            <label for="number-people">Number of people</label>
+            <input type="text" id="number-people">
+            <i class="fa-solid fa-user"></i>
+            <small class="d-none">This field is required</small>
+          </div>
+        </form>
+
+        <div class="result">
+          <div class="tip-amount">
+            <p>Tip Amount <br> <span>/ person</span></p>
+            <span id="tip-number">$0.00</span>
+          </div>
+          <div class="total">
+            <p>Total <br> <span>/ person</span></p>
+            <span id="total">$0.00</span>
+          </div>
+          <div class="submit">
+            <button id="submit" type="submit">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
